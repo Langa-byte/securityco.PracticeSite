@@ -1,0 +1,314 @@
+/* 
+Theme Name:		Hello Elementor Child
+Theme URI:		https://elementor.com/
+Description:	Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author:			Elementor Team
+Author URI:		https://elementor.com/
+Template:		hello-elementor
+Version:		1.0.0
+Text Domain:	hello-elementor-child
+Tags:           flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Branche template css */
+.fdlt-section {
+    background-color: #f8f9fa;
+}
+
+.entry-title.branche{ display:block; }
+.branche.type-branche{ margin:60px auto; }
+
+/* Container for flexboxes */
+.fdlt-container {
+    padding: 90px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1170px;
+}
+
+/* Container row */
+.fdlt-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.fdlt-column-4 {
+    flex: 33.33333333%;
+    padding: 20px;
+}
+
+.fdlt-column-8 {
+    flex: 66.66666666%;
+    padding: 20px;
+}
+
+.fdlt-sidebar .fdlt-widget-area .fdlt-widget {
+    position: relative;
+    margin: 30px 0 30px;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #f2f2f2;
+}
+
+.fdlt-sidebar .fdlt-widget .fdlt-widget-title {
+    position: relative;
+    display: block;
+    margin-bottom: 45px;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+.fdlt-sidebar .fdlt-widget .fdlt-widget-title:before {
+    width: 100%;
+    background-color: #f2f2f2;
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: -15px;
+    left: 0;
+}
+
+.fdlt-sidebar .fdlt-widget .fdlt-widget-title:after {
+    width: 15%;
+    height: 2px;
+    background-color: #1A6B54;
+}
+.fdlt-sidebar .fdlt-widget .fdlt-widget-title:after,
+.fdlt-sidebar .fdlt-widget .fdlt-widget-title:before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: -15px;
+    left: 0;
+}
+
+.fdlt-sidebar .fdlt-widget .fdlt-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list li {
+    display: flex;
+    padding-top: 10px;
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:checked, 
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:not(:checked) {
+    position: unset;
+    visibility: hidden;
+    left: -9999px;
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:checked:before, 
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:not(:checked):before {
+    content: "";
+    visibility: visible;
+    left: 5px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ba9e66;
+    border-radius: 100%;
+    background: #fff;
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list input:before {
+    content: '' !important;
+    margin-right: 10px !important;
+    margin-top: -2px !important;
+    display: inline-block !important;
+    vertical-align: text-top !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: white !important;
+    border: #DADADA solid 1px !important;
+    border-radius: 2px !important;
+    margin-left: -10px !important;
+    cursor: pointer;
+}
+
+.fdlt-sidebar .fdlt-widget .fdlt-list label:hover {
+    color: #0092ff !important; 
+    transition-duration: 0.5s;
+}
+
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:checked + label:after, 
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:not(:checked) + label:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #ba9e66;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    border-radius: 100%;
+    /* -webkit-transition: all 0.2s ease; */
+    /* transition: all 0.2s ease; */
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:checked + label:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #ba9e66;
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    border-radius: 100%;
+    /* -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; */
+}
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:checked + label,
+.fdlt-sidebar .fdlt-widget .fdlt-list [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 32px;
+    padding-right: 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: #666;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+}
+
+.fdlt-branches-section .fdlt-content-area {
+    padding-top: 51px;
+}
+
+.fdlt-branches-section .panel-group .panel {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 6px 0px rgb(0 0 0 / 26%);
+    text-align: left;
+    margin: 0 0 20px 0 !important;
+}
+
+.fdlt-branches-section .panel-default .panel-heading {
+    color: #333;
+    background-color: transparent !important;
+    border-color: #ddd;
+    padding: 20px 18px;
+}
+.fdlt-branches-section .panel-default .panel-heading a {
+    text-decoration: none !important;
+}
+
+.fdlt-branches-section .label-info {
+    background-color: transparent !important;
+}
+
+.fdlt-branches-section .fdlt_faq_panel {
+    text-align: left;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.fdlt-branches-section .panel-heading .accordion-toggle.collapsed:after {
+    content: "\e080";
+}
+
+.fdlt-branches-section .panel-heading .accordion-toggle:after {
+    color: #ba9e66;
+    position: relative;
+    top: -19px;
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    float: right;
+}
+
+.fdlt-branches-section .panel-heading .accordion-toggle:hover,
+.fdlt-branches-section .panel-heading .accordion-toggle:active {
+    text-decoration: none;
+}
+
+.fdlt-branches-section .panel-collapse {
+    text-align: left !important;
+    padding: 0px 20px !important;
+    background-color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+}
+
+.fdlt-branches-section .panel-body p {
+    margin-top: 1px;
+    margin-bottom: 23px !important;
+}
+
+.fdlt-branches-section .branch_info p {
+    font-size: 16px;
+}
+
+.fdlt-branches-section .branch_info .fa {
+    font-size: 20px;
+    margin-right: 5px;
+    width: 20px;
+}
+.gt-pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+.page-numbers {
+    position: relative;
+    padding: 6px 15px;
+    line-height: 1.42857143;
+    color: #0a4474;
+    text-decoration: none;
+    border-radius: 8px !important;
+    margin-left: 20px;
+    text-decoration: none !important;
+}
+.page-numbers.current {
+    color: #fff !important;
+    background-color: #0a4474 !important;
+    border-color: unset !important;
+    /* transition-duration: 0.5s; */
+}
+
+/* search page filter button css */
+.search-filter-btn.filter-active a , .search-filter-btn a:hover{
+    background-color: #006B54 !important;
+    color: #fff !important;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .fdlt-column {
+        flex: 50%;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .fdlt-sidebar .fdlt-widget-area {
+        display: flex;
+    }
+    .fdlt-sidebar .fdlt-widget-area .fdlt-widget {
+        width: 50%;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .fdlt-row {
+        flex-direction: column;
+    }
+}
+/* /Branche template css */
